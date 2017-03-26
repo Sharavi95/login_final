@@ -41,7 +41,6 @@
             android:launchMode="singleTop" />
         <activity android:name=".activity.BookTennisActivity" />
         <activity android:name=".activity.BookGroupClassActivity" />
-        <activity android:name=".activity.BookTennis1Activity"></activity>
     </application>
 
 </manifest>

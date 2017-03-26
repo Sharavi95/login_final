@@ -12,5 +12,7 @@
     <string name="welcome">Welcome</string>
     <string name="btn_logout">LOGOUT</string>
     <string name="name">Fullname</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
 
 </resources>
