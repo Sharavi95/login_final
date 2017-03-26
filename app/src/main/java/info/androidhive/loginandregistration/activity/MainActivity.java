@@ -18,6 +18,8 @@ public class MainActivity extends Activity {
 	private TextView txtName;
 	private TextView txtEmail;
 	private Button btnLogout;
+	private Button btnBookTennis;
+	private Button btnBookGroupClass;
 
 	private SQLiteHandler db;
 	private SessionManager session;
@@ -30,6 +32,8 @@ public class MainActivity extends Activity {
 		txtName = (TextView) findViewById(R.id.name);
 		txtEmail = (TextView) findViewById(R.id.email);
 		btnLogout = (Button) findViewById(R.id.btnLogout);
+		btnBookTennis = (Button) findViewById(R.id.BookTennis);
+		btnBookGroupClass = (Button) findViewById(R.id.BookGroupClass);
 
 		// SqLite database handler
 		db = new SQLiteHandler(getApplicationContext());
@@ -57,6 +61,22 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				logoutUser();
+			}
+		});
+		btnBookTennis.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, BookTennisActivity.class);
+				startActivity(intent);
+			}
+		});
+		btnBookGroupClass.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity.this, BookGroupClassActivity.class);
+				startActivity(intent);
 			}
 		});
 	}
