@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_group_class"
+    android:orientation="vertical"
     tools:context="info.androidhive.loginandregistration.activity.BookGroupClassActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/selectDateGroupClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_group_classTextField"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="15dp"
+        android:textAppearance="@style/BText"
+        android:hint="Select Session Date"
+        android:textColorHint="@color/input_register_hint"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/submitLevelGroupClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:padding="16dp"
+        style="@style/BText"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+</LinearLayout>

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:id="@+id/Choice1"
+        android:id="@+id/Choice1Tennis"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:background="@color/bg_tennisTextField"
@@ -34,7 +34,7 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:paddingBottom="12dp"
-            android:id="@+id/playerLevel"
+            android:id="@+id/playerLevelTennis"
             android:layout_gravity="center_horizontal"
             android:textAppearance="@style/BText">
 
@@ -64,7 +64,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/selectDate"
+        android:id="@+id/selectDateTennis"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/bg_tennisTextField"
@@ -75,11 +75,11 @@
         android:textAppearance="@style/BText"
         android:hint="Select Session Date"
         android:textColorHint="@color/input_register_hint"
-        android:layout_below="@+id/Choice1"
+        android:layout_below="@+id/Choice1Tennis"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/submitLevel"
+        android:id="@+id/submitLevelTennis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
